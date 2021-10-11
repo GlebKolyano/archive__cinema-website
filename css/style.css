@@ -460,6 +460,7 @@ a {
 }
 
 .header {
+  z-index: -1;
   padding-top: 30px;
   position: absolute;
   min-width: 100vw;
@@ -514,9 +515,8 @@ a {
 }
 
 .film {
-  position: relative;
-  z-index: 9;
-  top: 150px;
+  padding-top: 150px;
+  margin-bottom: 60px;
 }
 .film .container .film__info {
   max-width: 600px;
@@ -568,4 +568,25 @@ a {
 }
 .film .container .film__trailer {
   margin: 0 auto;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.session {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 45px;
+  padding-bottom: 65px;
+  border-top: 1px solid #ffffff80;
+  border-bottom: 1px solid #ffffff80;
 }
