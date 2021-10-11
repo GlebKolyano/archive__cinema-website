@@ -573,6 +573,8 @@ a {
 .title {
   font-size: 16px;
   line-height: 19px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .session {
@@ -585,8 +587,102 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 45px;
+  padding-top: 25px;
   padding-bottom: 65px;
   border-top: 1px solid #ffffff80;
   border-bottom: 1px solid #ffffff80;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+@media screen and (max-width: 860px) {
+  .session {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.session .session-data .data-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+.session .session-data .data-block .data__item {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #ffffff80;
+  border-radius: 5px;
+  width: 90px;
+  height: 90px;
+}
+.session .session-data .data-block .data__item:hover {
+  background: #fe8e05;
+  color: #621402;
+}
+.session .session-data .data-block .data__item .data__month {
+  font-size: 16px;
+  line-height: 19px;
+}
+.session .session-data .data-block .data__item .data__day {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+.session .session-data .data-block .data__item .data__week {
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.session-cinema {
+  max-width: 470px;
+  width: 100%;
+}
+.session-cinema .select-cinema {
+  padding: 0 18px;
+  color: white;
+  font-size: 16px;
+  line-height: 150%;
+  cursor: pointer;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  width: 100%;
+}
+.session-cinema .select-cinema > option {
+  background: #0f0f0f;
+}
+
+.session-time {
+  max-width: 100px;
+  width: 100%;
+}
+.session-time .select-time {
+  padding: 0 18px;
+  color: white;
+  font-size: 16px;
+  line-height: 150%;
+  cursor: pointer;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  width: 100%;
+}
+.session-time .select-time > option {
+  background: #0f0f0f;
 }
