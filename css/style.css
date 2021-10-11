@@ -550,10 +550,21 @@ a {
   margin-right: 12px;
 }
 .film .container .film__info .film__time-rating .film__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 24px;
   margin-right: 34px;
 }
 .film .container .film__info .film__time-rating .film__rating img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-right: 12px;
+}
+.film .container .film__info .film__time-rating .film__rating strong {
+  font-size: 24px;
 }
 .film .container .film__trailer {
   margin: 0 auto;
